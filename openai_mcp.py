@@ -29,7 +29,7 @@ def generate(args):
     key = os.environ.get("OPENAI_API_KEY")
     if not key:
         raise RuntimeError("OPENAI_API_KEY 환경변수가 설정되지 않았습니다.")
-    model = os.environ.get("OPENAI_IMAGE_MODEL", "gpt-image-2.5-sunburst")
+    model = os.environ.get("OPENAI_IMAGE_MODEL", "gpt-image-2.6-sunburst")
     req = urllib.request.Request(
         "https://api.openai.com/v1/images/generations",
         data=json.dumps({"model": model, "prompt": args["prompt"],

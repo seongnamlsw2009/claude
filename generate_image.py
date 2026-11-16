@@ -15,7 +15,7 @@ def main():
     prompt = sys.argv[1]
     out = sys.argv[2] if len(sys.argv) > 2 else "output/image.png"
     key = os.environ["OPENAI_API_KEY"]
-    model = os.environ.get("OPENAI_IMAGE_MODEL", "gpt-image-2.5-sunburst")
+    model = os.environ.get("OPENAI_IMAGE_MODEL", "gpt-image-2.6-sunburst")
 
     req = urllib.request.Request(
         "https://api.openai.com/v1/images/generations",

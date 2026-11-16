@@ -10,7 +10,7 @@ on:
       model:
         description: "이미지 모델 ID"
         required: true
-        default: "gpt-image-2.5-sunburst"
+        default: "gpt-image-2.6-sunburst"
 
 jobs:
   generate:
